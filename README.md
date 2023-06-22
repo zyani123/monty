@@ -27,4 +27,4 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 ## Compilation
 
 To compile this project, you can use the following command:
-'gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty'
+'''gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty'''

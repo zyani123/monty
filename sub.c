@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * op_sub - subtracts the top element of the stack from the second top element
+ * sub - subtracts the top element of the stack from the second top element
  * @stack: double pointer to the head of the stack
  * @line_number: current line number in the file
  */
-void op_sub(stack_t **stack, unsigned int line_number)
+void sub(stack_t **stack, unsigned int line_number)
 {
 	int result;
 	stack_t *temp;

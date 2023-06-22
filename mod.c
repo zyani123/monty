@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * op_mod - computes the modulus of the second top element of the stack
+ * mod - computes the modulus of the second top element of the stack
  *          with the top element of the stack.
  * @stack: pointer to the top of the stack
  * @line_number: line number of the opcode
  */
-void op_mod(stack_t **stack, unsigned int line_number)
+void mod(stack_t **stack, unsigned int line_number)
 {
 	int a, b;
 

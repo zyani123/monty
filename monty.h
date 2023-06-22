@@ -69,20 +69,17 @@ void op_add(stack_t **stack, unsigned int line_number);
 void op_nop(stack_t **stack, unsigned int line_number);
 void op_sub(stack_t **stack, unsigned int line_number);
 void op_div(stack_t **stack, unsigned int line_number);
-<<<<<<< HEAD
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
 void rotl(stack_t **head,  __attribute__((unused)) unsigned int line_number);
 void rotr(stack_t **head, __attribute__((unused)) unsigned int line_number);
-=======
 void op_mul(stack_t **stack, unsigned int line_number);
 void op_mod(stack_t **stack, unsigned int line_number);
 void op_pchar(stack_t **stack, unsigned int line_number);
 void op_pstr(stack_t **stack, unsigned int line_number);
 
->>>>>>> 5e64ebd43e81cd3dfb28169c84e827a41af0a8ed
 /* Stack helper functions */
 stack_t *add_node(stack_t **stack, const int n);
 int is_number(char *str);

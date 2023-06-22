@@ -22,8 +22,7 @@ void op_pop(stack_t **stack, unsigned int line_number)
 	free(*stack);
 	/*Update the head pointer to point to the new top node.*/
 	*stack = temp;
-	/*Update the prev pointer of the new top node to NULL*/
-	/*to indicate that it is now the top of the stack.*/
+	
 	if (*stack != NULL)
 		(*stack)->prev = NULL;
 }

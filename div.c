@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * op_div - divides the second top element of the stack by the top element
+ * div - divides the second top element of the stack by the top element
  * @stack: double pointer to the head of the stack
  * @line_number: current line number in the file
  */
-void op_div(stack_t **stack, unsigned int line_number)
+void div(stack_t **stack, unsigned int line_number)
 {
 	int result;
 	stack_t *temp;

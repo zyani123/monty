@@ -55,6 +55,25 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+union montyfunctype
+{
+	void (*toponly)(stack_t **top);
+	void (*pushmode)(stack_t **top, stack_t **bot, int val, int mode);
+	void (*topbot)(stack_t **top, stack_t **bot);
+};
+
+typedef struct optype
+{
+	char *opcode;
+	union montyfunctype func;
+} optype;
+
+typedef struct montyglob
+{
+	char *buffer;
+	unsigned long linenum;
+	FILE* script;
+} montyglob;
 
 /* Function prototypes */
 void execute_file(stack_t **stack);
@@ -73,8 +92,8 @@ void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
-void rotl(stack_t **head,  __attribute__((unused)) unsigned int line_number);
-void rotr(stack_t **head, __attribute__((unused)) unsigned int line_number);
+void rotl(stack_t **top, stack_t **bot);
+void rotr(stack_t **top, stack_t **bot);
 void op_mul(stack_t **stack, unsigned int line_number);
 void op_mod(stack_t **stack, unsigned int line_number);
 void op_pchar(stack_t **stack, unsigned int line_number);

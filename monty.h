@@ -22,7 +22,6 @@ typedef struct global_s
 	char *arg;
 	FILE *file;
 	char *line;
-        int lifi;
 
 } glob_t;
 
@@ -101,10 +100,7 @@ void op_mod(stack_t **stack, unsigned int line_number);
 void op_pchar(stack_t **stack, unsigned int line_number);
 void op_pstr(stack_t **stack, unsigned int line_number);
 void op_rotl(stack_t **head, unsigned int counter);
-void f_rotr(stack_t **stack, __attribute__((unused)) unsigned int counter);
-void f_queue(stack_t **stack, unsigned int counter);
-void f_stack(stack_t **stack, unsigned int counter);
-void addqueue(stack_t **stack, int n);
+void op_rotr(stack_t **stack, __attribute__((unused)) unsigned int counter);
 
 
 /* Stack helper functions */

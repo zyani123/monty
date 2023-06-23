@@ -104,6 +104,7 @@ void op_rotl(stack_t **head, unsigned int counter);
 void f_rotr(stack_t **stack, __attribute__((unused)) unsigned int counter);
 void f_queue(stack_t **stack, unsigned int counter);
 void f_stack(stack_t **stack, unsigned int counter);
+void addqueue(stack_t **stack, int n);
 
 
 /* Stack helper functions */

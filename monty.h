@@ -22,6 +22,8 @@ typedef struct global_s
 	char *arg;
 	FILE *file;
 	char *line;
+        int lifi;
+
 } glob_t;
 
 extern glob_t glob;

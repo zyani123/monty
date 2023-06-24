@@ -4,6 +4,7 @@
  * op_push - pushes an element onto the stack
  * @stack: pointer to the top of the stack
  * @line_number: current line number of the opcode in the Monty file
+ * is_number
  */
 void op_push(stack_t **stack, unsigned int line_number)
 {

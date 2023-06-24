@@ -4,7 +4,6 @@
  * op_push - pushes an element onto the stack
  * @stack: pointer to the top of the stack
  * @line_number: current line number of the opcode in the Monty file
- * is_number
  */
 void op_push(stack_t **stack, unsigned int line_number)
 {
@@ -33,6 +32,7 @@ void op_push(stack_t **stack, unsigned int line_number)
 /**
  * is_number - checks if a string is a number
  * @str: string to check
+ * Return: 1 if string is a number, 0 otherwise
  */
 int is_number(char *str)
 {

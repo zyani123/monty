@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * op_pop - removes the top element of the stack
+ * op_pop-removes the top element of the stack
  * @stack: pointer to the top of the stack
  * @line_number: line number  the opcode
  **/
@@ -22,7 +22,6 @@ void op_pop(stack_t **stack, unsigned int line_number)
 	free(*stack);
 	/*Update the head pointer to point to the new top node.*/
 	*stack = temp;
-	
 	if (*stack != NULL)
 		(*stack)->prev = NULL;
 }
